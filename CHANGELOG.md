@@ -1,6 +1,205 @@
 # Fauxhai-ng Changelog
 
-## v7.6 (2012-02-12)
+## v9.0.0 (2021-04-07)
+
+This release removes all previously deprecated Fauxhai definitions which have alerted during their use over the last year.  These platforms have been removed either due to the platform reaching end-of-life status with the vendor or newer minor releases of the platform being available in Fauxhai.
+
+In general make sure to write ChefSpec tests that reference the major version (or no version at all) of the platform so that Fauxhai can automatically pick the latest version. Allowing Fauxhai to best chose the version of the minor or major platform release ensures your specs continue to run as new platforms are released and older Fauxhai data is removed.
+
+To automatically migrate ChefSpec tests to use newer platforms you use the [Chef/Deprecations/DeprecatedChefSpecPlatform](https://docs.chef.io/workstation/cookstyle/chef_deprecations_deprecatedchefspecplatform/) Cookstyle cop, which will autocorrect many specs:
+
+`cookstyle -a --only Chef/Deprecations/DeprecatedChefSpecPlatform`
+
+### Platforms Removed
+
+- AIX 6.1
+- Amazon Linux 2015.03
+- Amazon Linux 2015.09
+- Amazon Linux 2016.03
+- Amazon Linux 2016.09
+- Amazon Linux 2017.03
+- Amazon Linux 2017.09
+- CentOS 5.11
+- CentOS 6.9
+- CentOS 7.5.1804
+- CentOS 7.6.1810
+- Debian 8.11
+- Debian 9.8
+- Debian 9.9
+- Fedora 29
+- Fedora 30
+- FreeBSD  11.1
+- Linux Mint 18.3
+- macOS 10.13
+- OpenSUSE 15.0
+- OpenSUSE 15.1
+- Oracle Linux 5.11
+- Oracle Linux 6.9
+- Red Hat Linux 5.11
+- Red Hat Linux 6.9
+- Red Hat Linux 7.4
+- Red Hat Linux 7.5
+- Red Hat Linux 7.6
+- Suse Enterprise Linux 12.3
+- Ubuntu 14.04
+- Windows 20008 R2
+
+## v8.7.1 (2021-04-03)
+
+- Add files to the gem package to help with Chef Workstation bundling
+
+## v8.7.0 (2020-12-31)
+
+### Newly Deprecated Platforms (removal in April 2021)
+
+- openSUSE 15.1
+- Redhat 7.6
+- CentOS 7.6
+- Linux Mint 18.3
+- All Amazon Linux 201X releases except 2018.03
+
+## v8.6.0 (2020-12-01)
+
+### New Platforms
+
+- macOS 11
+
+### Newly Deprecated Platforms (removal in April 2021)
+
+- macOS 10.13
+
+## v8.5.0 (2020-11-17)
+
+### New Platforms
+
+- AIX 7.2
+
+### Updated Platforms
+
+- AIX 7.1: Updated the Ohai dump from Chef Infra Client 14 to 16.7, which updates Ruby plugin data, filesystem plugin data, and shard plugin data.
+
+## v8.4.0 (2020-11-09)
+
+### New Platforms
+
+- CentOS 7.8
+- Red Hat 7.8
+- Add openSUSE 15.2
+
+### Updated Platforms
+
+- Ubuntu 16.04 - 20.04
+- Debian 9 & 10 releases
+- Red Hat 7 and 8 releases
+- openSUSE 15.1
+- Fedora 31/32
+- Amazon releases
+
+## v8.3.1 (2020-08-17)
+
+- Only require net/ssh if we're using the ssh functionality
+- Add a rake task to generate a platforms.json file that can be parses out to determine all platforms
+
+## v8.3.0 (2020-08-13)
+
+### Newly Removed Platforms
+
+- Removed the end of life Debian 8.9/8.10 definitions. If you still need to test EOL Debian 8 you can use Debian 8.11 for now.
+
+### New Platforms
+
+- Debian 9.12
+
+### Updated Platforms
+
+- Ubuntu 16.04 has been updated to 16.04.7
+- Ubuntu 18.04 has been updated to 18.04.5
+- Ubuntu 20.04 has been updated to 20.04.1
+- CentOS 8 has been updated to 8.2
+
+### Newly Deprecated Platforms (removal in April 2021)
+
+- CentOS 6.9
+- Debian 8.11
+- Debian 9.8
+- Debian 9.9
+- openSUSE 15.0
+- Oracle Linux 6.9
+
+## v8.2.0 (2020-05-17)
+
+### New Platforms
+
+- SLES 12.5
+- Fedora 32
+
+### Updated Platforms
+
+- Redhat 8 is now gathered using a Redhat 8.2 AMI
+- Debian 10 is now gathering using a Debian 10.4 AMI
+- CentOS 7.7 is now gathered using the official CentOS AMI
+
+### Newly Deprecated Platforms (removal in April 2021)
+
+- CentOS 7.5
+- RHEL 7.5
+- Fedora 30
+- SLES 12.3
+
+## v8.1.0 (2020-04-29)
+
+### New Platforms
+
+- Ubuntu 20.04
+- openSUSE 15.1
+
+### Updated Platforms
+
+- macOS 10.15 has been updated to 10.15.4
+- CentOS 8 updated from 8.0.1905 to 8.1.1911 and is now on AWS
+- Most non-deprecated systems re-gathered using Chef Infra Client 16.0
+
+### Newly Deprecated Platforms (removal in April 2021)
+
+- Oracle 5.11
+- Redhat 5.11
+- CentOS 5.11
+
+## v8.0.0 (2020-03-09)
+
+### New Platforms
+
+- Raspbian 10
+- Fedora 31
+- Redhat 7.7
+- CentOS 7.7.1908
+
+### Removed Platforms
+
+- Raspbian 8.0
+- Debian 9.2 / 9.3 / 9.4 / 9.5 / 9.6
+- Fedora 26/27/28
+- FreeBSD 10.4
+- macOS 10.11 / 10.12
+- openSUSE 42.2 / 42.3
+- CentOS 6.8 / 7.3.1611 / 7.4.1708
+- Debian 7.11
+- FreeBSD 10.4
+- Oracle Linux 6.8 / 7.3 / 7.4
+- Redhat 6.8 / 7.3
+- SUSE 11.4 / 12.1 / 12.2
+- Ubuntu 17.10
+
+### Newly Deprecated Platforms (removal in April 2021)
+
+- AIX 6.1
+- Amazon 2015.03 / 2015.09
+- FreeBSD 11.1
+- Redhat 6.9 / 7.4
+- Windows 2008 R2
+- Fedora 29
+
+## v7.6 (2020-02-12)
 
 ### New / Updated Platforms
 

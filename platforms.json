@@ -1,0 +1,234 @@
+{
+  "aix": {
+    "7.1": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/aix/7.1.json"
+    },
+    "7.2": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/aix/7.2.json"
+    }
+  },
+  "amazon": {
+    "2": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/amazon/2.json"
+    },
+    "2018.03": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/amazon/2018.03.json"
+    }
+  },
+  "arch": {
+    "4.10.13-1-ARCH": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/arch/4.10.13-1-ARCH.json"
+    }
+  },
+  "centos": {
+    "6.10": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/centos/6.10.json"
+    },
+    "7.7.1908": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/centos/7.7.1908.json"
+    },
+    "7.8.2003": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/centos/7.8.2003.json"
+    },
+    "8": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/centos/8.json"
+    }
+  },
+  "clearos": {
+    "7.4": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/clearos/7.4.json"
+    }
+  },
+  "debian": {
+    "9.11": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/debian/9.11.json"
+    },
+    "9.12": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/debian/9.12.json"
+    },
+    "10": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/debian/10.json"
+    }
+  },
+  "dragonfly4": {
+    "4.8-RELEASE": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/dragonfly4/4.8-RELEASE.json"
+    }
+  },
+  "fedora": {
+    "31": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/fedora/31.json"
+    },
+    "32": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/fedora/32.json"
+    }
+  },
+  "freebsd": {
+    "11.2": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/freebsd/11.2.json"
+    },
+    "12.1": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/freebsd/12.1.json"
+    }
+  },
+  "gentoo": {
+    "4.9.95-gentoo": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/gentoo/4.9.95-gentoo.json"
+    }
+  },
+  "linuxmint": {
+    "19.0": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/linuxmint/19.0.json"
+    }
+  },
+  "mac_os_x": {
+    "10.14": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/mac_os_x/10.14.json"
+    },
+    "10.15": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/mac_os_x/10.15.json"
+    },
+    "11.0": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/mac_os_x/11.0.json"
+    }
+  },
+  "openbsd": {
+    "6.2": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/openbsd/6.2.json"
+    }
+  },
+  "opensuse": {
+    "15.2": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/opensuse/15.2.json"
+    }
+  },
+  "oracle": {
+    "6.10": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/oracle/6.10.json"
+    },
+    "7.5": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/oracle/7.5.json"
+    },
+    "7.6": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/oracle/7.6.json"
+    }
+  },
+  "raspbian": {
+    "10": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/raspbian/10.json"
+    }
+  },
+  "redhat": {
+    "6.10": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/redhat/6.10.json"
+    },
+    "7.7": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/redhat/7.7.json"
+    },
+    "7.8": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/redhat/7.8.json"
+    },
+    "8": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/redhat/8.json"
+    }
+  },
+  "smartos": {
+    "5.11": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/smartos/5.11.json"
+    }
+  },
+  "solaris2": {
+    "5.11": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/solaris2/5.11.json"
+    }
+  },
+  "suse": {
+    "12.4": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/suse/12.4.json"
+    },
+    "12.5": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/suse/12.5.json"
+    },
+    "15": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/suse/15.json"
+    }
+  },
+  "ubuntu": {
+    "16.04": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/ubuntu/16.04.json"
+    },
+    "18.04": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/ubuntu/18.04.json"
+    },
+    "20.04": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/ubuntu/20.04.json"
+    }
+  },
+  "windows": {
+    "10": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/windows/10.json"
+    },
+    "2012": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/windows/2012.json"
+    },
+    "2012R2": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/windows/2012R2.json"
+    },
+    "2016": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/windows/2016.json"
+    },
+    "2019": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/windows/2019.json"
+    },
+    "8.1": {
+      "deprecated": false,
+      "path": "lib/fauxhai/platforms/windows/8.1.json"
+    }
+  }
+}

@@ -10,12 +10,12 @@
   },
   "chef_packages": {
     "chef": {
-      "chef_root": "/opt/chef/embedded/lib/ruby/gems/2.6.0/gems/chef-15.3.14/lib",
-      "version": "15.3.14"
+      "chef_root": "/opt/chef/embedded/lib/ruby/gems/2.7.0/gems/chef-16.1.16/lib",
+      "version": "16.1.16"
     },
     "ohai": {
-      "ohai_root": "/opt/chef/embedded/lib/ruby/gems/2.6.0/gems/ohai-15.3.1/lib/ohai",
-      "version": "15.3.1"
+      "ohai_root": "/opt/chef/embedded/lib/ruby/gems/2.7.0/gems/ohai-16.1.1/lib/ohai",
+      "version": "16.1.1"
     }
   },
   "command": {
@@ -81,8 +81,6 @@
           "Address": "0xE8000",
           "BIOS Revision": "4.2",
           "Characteristics": {
-            "EDD is supported": null,
-            "PCI is supported": null,
             "Targeted content distribution is supported": null
           },
           "ROM Size": "64 kB",
@@ -188,8 +186,8 @@
           "Manufacturer": "Xen",
           "Product Name": "HVM domU",
           "SKU Number": "Not Specified",
-          "Serial Number": "ec2b4e60-440c-c001-dd08-94d0947287b5",
-          "UUID": "EC2B4E60-440C-C001-DD08-94D0947287B5",
+          "Serial Number": "ec2c889e-8a8d-706b-0540-5c838c869729",
+          "UUID": "EC2C889E-8A8D-706B-0540-5C838C869729",
           "Version": "4.2.amazon",
           "Wake-up Type": "Power Switch",
           "application_identifier": "System Information",
@@ -200,9 +198,9 @@
       "family": "Not Specified",
       "manufacturer": "Xen",
       "product_name": "HVM domU",
-      "serial_number": "ec2b4e60-440c-c001-dd08-94d0947287b5",
+      "serial_number": "ec2c889e-8a8d-706b-0540-5c838c869729",
       "sku_number": "Not Specified",
-      "uuid": "EC2B4E60-440C-C001-DD08-94D0947287B5",
+      "uuid": "EC2C889E-8A8D-706B-0540-5C838C869729",
       "version": "4.2.amazon",
       "wake_up_type": "Power Switch"
     }
@@ -215,12 +213,12 @@
       },
       "/dev/xvda1": {
         "fs_type": "xfs",
-        "inodes_available": "5174047",
+        "inodes_available": "5179585",
         "inodes_percent_used": "2%",
-        "inodes_used": "68321",
-        "kb_available": "8717184",
+        "inodes_used": "62783",
+        "kb_available": "8732056",
         "kb_size": "10474496",
-        "kb_used": "1757312",
+        "kb_used": "1742440",
         "label": "ROOT",
         "mount_options": [
           "rw",
@@ -244,21 +242,21 @@
           "nodev",
           "noexec",
           "relatime",
-          "pids"
+          "blkio"
         ],
         "mounts": [
           "/sys/fs/cgroup/systemd",
-          "/sys/fs/cgroup/cpuset",
-          "/sys/fs/cgroup/blkio",
-          "/sys/fs/cgroup/hugetlb",
+          "/sys/fs/cgroup/net_cls,net_prio",
+          "/sys/fs/cgroup/rdma",
           "/sys/fs/cgroup/cpu,cpuacct",
           "/sys/fs/cgroup/devices",
-          "/sys/fs/cgroup/rdma",
           "/sys/fs/cgroup/freezer",
-          "/sys/fs/cgroup/net_cls,net_prio",
+          "/sys/fs/cgroup/hugetlb",
+          "/sys/fs/cgroup/cpuset",
           "/sys/fs/cgroup/memory",
           "/sys/fs/cgroup/perf_event",
-          "/sys/fs/cgroup/pids"
+          "/sys/fs/cgroup/pids",
+          "/sys/fs/cgroup/blkio"
         ]
       },
       "debugfs": {
@@ -394,13 +392,13 @@
         "mount_options": [
           "rw",
           "relatime",
-          "fd=32",
+          "fd=22",
           "pgrp=1",
           "timeout=0",
           "minproto=5",
           "maxproto=5",
           "direct",
-          "pipe_ino=18235"
+          "pipe_ino=17976"
         ],
         "mounts": [
           "/proc/sys/fs/binfmt_misc"
@@ -440,12 +438,12 @@
           "/dev/xvda1"
         ],
         "fs_type": "xfs",
-        "inodes_available": "5174047",
+        "inodes_available": "5179585",
         "inodes_percent_used": "2%",
-        "inodes_used": "68321",
-        "kb_available": "8717184",
+        "inodes_used": "62783",
+        "kb_available": "8732056",
         "kb_size": "10474496",
-        "kb_used": "1757312",
+        "kb_used": "1742440",
         "label": "ROOT",
         "mount_options": [
           "rw",
@@ -554,13 +552,13 @@
         "mount_options": [
           "rw",
           "relatime",
-          "fd=32",
+          "fd=22",
           "pgrp=1",
           "timeout=0",
           "minproto=5",
           "maxproto=5",
           "direct",
-          "pipe_ino=18235"
+          "pipe_ino=17976"
         ]
       },
       "/run": {
@@ -867,12 +865,12 @@
       "/dev/xvda1,/": {
         "device": "/dev/xvda1",
         "fs_type": "xfs",
-        "inodes_available": "5174047",
+        "inodes_available": "5179585",
         "inodes_percent_used": "2%",
-        "inodes_used": "68321",
-        "kb_available": "8717184",
+        "inodes_used": "62783",
+        "kb_available": "8732056",
         "kb_size": "10474496",
-        "kb_used": "1757312",
+        "kb_used": "1742440",
         "label": "ROOT",
         "mount": "/",
         "mount_options": [
@@ -1171,13 +1169,13 @@
         "mount_options": [
           "rw",
           "relatime",
-          "fd=32",
+          "fd=22",
           "pgrp=1",
           "timeout=0",
           "minproto=5",
           "maxproto=5",
           "direct",
-          "pipe_ino=18235"
+          "pipe_ino=17976"
         ]
       },
       "tmpfs,/dev/shm": {
@@ -1591,7 +1589,7 @@
       }
     }
   },
-  "ohai_time": 1570578164.5431664,
+  "ohai_time": 1592290463.862805,
   "os": "linux",
   "os_version": "4.12.14-95.19-default",
   "packages": {
@@ -1780,9 +1778,9 @@
     "chef": {
       "arch": "x86_64",
       "epoch": "0",
-      "installdate": "1570578155",
+      "installdate": "1592290452",
       "release": "1.sles12",
-      "version": "15.3.14"
+      "version": "16.1.16"
     },
     "cifs-utils": {
       "arch": "x86_64",
@@ -5837,7 +5835,7 @@
   "platform_family": "suse",
   "platform_version": "12.4",
   "root_group": "root",
-  "shard_seed": 177455385,
+  "shard_seed": 159036833,
   "shells": [
     "/bin/ash",
     "/bin/bash",

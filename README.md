@@ -1,17 +1,17 @@
 # Fauxhai-ng
 
-[![Build Status Master](https://travis-ci.org/chefspec/fauxhai.svg?branch=master)](https://travis-ci.org/chefspec/fauxhai) [![Gem Version](https://badge.fury.io/rb/fauxhai.svg)](https://badge.fury.io/rb/fauxhai)
+![CI](https://github.com/chefspec/fauxhai/workflows/CI/badge.svg) [![Gem Version](https://badge.fury.io/rb/fauxhai-ng.svg)](https://badge.fury.io/rb/fauxhai-ng)
 
 Note: fauxhai-ng is an updated version of the original fauxhai gem. The CLI and library namespaces have not changed, but you will want to update to use the new gem.
 
-Fauxhai is a gem for mocking out [ohai](https://github.com/chef/ohai) data in your chef testing. Fauxhai is community supported, so we need **your help** to populate our dataset. Here's an example for testing my "awesome_cookbook" on Ubuntu 16.04:
+Fauxhai is a gem for mocking out [ohai](https://github.com/chef/ohai) data in your chef testing. Fauxhai is community supported, so we need **your help** to populate our dataset. Here's an example for testing my "awesome_cookbook" on Ubuntu 20.04:
 
 ```ruby
 require 'chefspec'
 
 describe 'awesome_cookbook::default' do
   before do
-    Fauxhai.mock(platform: 'ubuntu', version: '16.04')
+    Fauxhai.mock(platform: 'ubuntu', version: '20.04')
   end
 
   it 'should install awesome' do
@@ -178,7 +178,7 @@ It's a common use case to test multiple version of the same operating system. He
 require 'chefspec'
 
 describe 'awesome_cookbook::default' do
-  ['14.04', '16.04'].each do |version|
+  ['18.04', '20.04'].each do |version|
     context "on Ubuntu #{version}" do
       before do
         Fauxhai.mock(platform: 'ubuntu', version: version)

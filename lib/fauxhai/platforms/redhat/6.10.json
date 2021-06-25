@@ -178,12 +178,12 @@
   },
   "chef_packages": {
     "chef": {
-      "chef_root": "/opt/chef/embedded/lib/ruby/gems/2.6.0/gems/chef-15.3.14/lib",
-      "version": "15.3.14"
+      "chef_root": "/opt/chef/embedded/lib/ruby/gems/2.7.0/gems/chef-16.6.14/lib",
+      "version": "16.6.14"
     },
     "ohai": {
-      "ohai_root": "/opt/chef/embedded/lib/ruby/gems/2.6.0/gems/ohai-15.3.1/lib/ohai",
-      "version": "15.3.1"
+      "ohai_root": "/opt/chef/embedded/lib/ruby/gems/2.7.0/gems/ohai-16.6.5/lib/ohai",
+      "version": "16.6.5"
     }
   },
   "command": {
@@ -249,8 +249,6 @@
           "Address": "0xE8000",
           "BIOS Revision": "4.2",
           "Characteristics": {
-            "EDD is supported": null,
-            "PCI is supported": null,
             "Targeted content distribution is supported": null
           },
           "ROM Size": "64 kB",
@@ -356,8 +354,8 @@
           "Manufacturer": "Xen",
           "Product Name": "HVM domU",
           "SKU Number": "Not Specified",
-          "Serial Number": "ec2fbf29-52f7-6157-3031-117b5eb51b8a",
-          "UUID": "EC2FBF29-52F7-6157-3031-117B5EB51B8A",
+          "Serial Number": "ec21126b-ddb7-ce41-5da4-155f44d03b4f",
+          "UUID": "EC21126B-DDB7-CE41-5DA4-155F44D03B4F",
           "Version": "4.2.amazon",
           "Wake-up Type": "Power Switch",
           "application_identifier": "System Information",
@@ -368,9 +366,9 @@
       "family": "Not Specified",
       "manufacturer": "Xen",
       "product_name": "HVM domU",
-      "serial_number": "ec2fbf29-52f7-6157-3031-117b5eb51b8a",
+      "serial_number": "ec21126b-ddb7-ce41-5da4-155f44d03b4f",
       "sku_number": "Not Specified",
-      "uuid": "EC2FBF29-52F7-6157-3031-117B5EB51B8A",
+      "uuid": "EC21126B-DDB7-CE41-5DA4-155F44D03B4F",
       "version": "4.2.amazon",
       "wake_up_type": "Power Switch"
     }
@@ -384,7 +382,7 @@
           "rw",
           "relatime",
           "fd=13",
-          "pgrp=1330",
+          "pgrp=1332",
           "timeout=300",
           "minproto=5",
           "maxproto=5",
@@ -399,19 +397,19 @@
       },
       "/dev/xvda1": {
         "fs_type": "ext4",
-        "inodes_available": "583746",
+        "inodes_available": "589611",
         "inodes_percent_used": "11%",
-        "inodes_used": "71614",
-        "kb_available": "7698012",
+        "inodes_used": "65749",
+        "kb_available": "7770752",
         "kb_size": "10189092",
-        "kb_used": "1966896",
+        "kb_used": "1894156",
         "mount_options": [
           "rw"
         ],
         "mounts": [
           "/"
         ],
-        "percent_used": "21%",
+        "percent_used": "20%",
         "total_inodes": "655360",
         "uuid": "7c176713-709f-43d2-b8ce-8a12613326fd"
       },
@@ -421,7 +419,7 @@
           "rw",
           "relatime",
           "fd=7",
-          "pgrp=1330",
+          "pgrp=1332",
           "timeout=300",
           "minproto=5",
           "maxproto=5",
@@ -530,16 +528,16 @@
           "rootfs"
         ],
         "fs_type": "rootfs",
-        "inodes_available": "583746",
+        "inodes_available": "589611",
         "inodes_percent_used": "11%",
-        "inodes_used": "71614",
-        "kb_available": "7698012",
+        "inodes_used": "65749",
+        "kb_available": "7770752",
         "kb_size": "10189092",
-        "kb_used": "1966896",
+        "kb_used": "1894156",
         "mount_options": [
           "rw"
         ],
-        "percent_used": "21%",
+        "percent_used": "20%",
         "total_inodes": "655360",
         "uuid": "7c176713-709f-43d2-b8ce-8a12613326fd"
       },
@@ -595,7 +593,7 @@
           "rw",
           "relatime",
           "fd=7",
-          "pgrp=1330",
+          "pgrp=1332",
           "timeout=300",
           "minproto=5",
           "maxproto=5",
@@ -611,7 +609,7 @@
           "rw",
           "relatime",
           "fd=13",
-          "pgrp=1330",
+          "pgrp=1332",
           "timeout=300",
           "minproto=5",
           "maxproto=5",
@@ -675,7 +673,7 @@
           "rw",
           "relatime",
           "fd=13",
-          "pgrp=1330",
+          "pgrp=1332",
           "timeout=300",
           "minproto=5",
           "maxproto=5",
@@ -688,17 +686,17 @@
       "/dev/xvda1,/": {
         "device": "/dev/xvda1",
         "fs_type": "ext4",
-        "inodes_available": "583746",
+        "inodes_available": "589611",
         "inodes_percent_used": "11%",
-        "inodes_used": "71614",
-        "kb_available": "7698012",
+        "inodes_used": "65749",
+        "kb_available": "7770752",
         "kb_size": "10189092",
-        "kb_used": "1966896",
+        "kb_used": "1894156",
         "mount": "/",
         "mount_options": [
           "rw"
         ],
-        "percent_used": "21%",
+        "percent_used": "20%",
         "total_inodes": "655360",
         "uuid": "7c176713-709f-43d2-b8ce-8a12613326fd"
       },
@@ -710,7 +708,7 @@
           "rw",
           "relatime",
           "fd=7",
-          "pgrp=1330",
+          "pgrp=1332",
           "timeout=300",
           "minproto=5",
           "maxproto=5",
@@ -811,7 +809,7 @@
   },
   "fips": {
     "kernel": {
-      "enabled": false
+      "enabled": true
     }
   },
   "fqdn": "fauxhai.local",
@@ -962,7 +960,18 @@
       "bin_dir": "/usr/local/bin",
       "gem_bin": "/usr/local/bin/gem",
       "gems_dir": "/usr/local/gems",
-      "ruby_bin": "/usr/local/bin/ruby"
+      "host": "x86_64-pc-linux-gnu",
+      "host_cpu": "x86_64",
+      "host_os": "linux-gnu",
+      "host_vendor": "pc",
+      "platform": "x86_64-linux",
+      "release_date": "2020-10-01",
+      "ruby_bin": "/usr/local/bin/ruby",
+      "target": "x86_64-pc-linux-gnu",
+      "target_cpu": "x86_64",
+      "target_os": "linux",
+      "target_vendor": "pc",
+      "version": "2.7.2"
     }
   },
   "lsb": {
@@ -1065,7 +1074,7 @@
       }
     }
   },
-  "ohai_time": 1570575815.3164785,
+  "ohai_time": 1604984602.9599266,
   "os": "linux",
   "os_version": "2.6.32-754.23.1.el6.x86_64",
   "packages": {
@@ -1436,9 +1445,9 @@
     "chef": {
       "arch": "x86_64",
       "epoch": "0",
-      "installdate": "1570575808",
+      "installdate": "1604984589",
       "release": "1.el6",
-      "version": "15.3.14"
+      "version": "16.6.14"
     },
     "chkconfig": {
       "arch": "x86_64",
@@ -2136,21 +2145,21 @@
     "gpg-pubkey": {
       "arch": "(none)",
       "epoch": "0",
-      "installdate": "1570575778",
+      "installdate": "1604984547",
       "release": "45700c69",
       "version": "2fa658e0",
       "versions": [
         {
           "arch": "(none)",
           "epoch": "0",
-          "installdate": "1570575778",
+          "installdate": "1604984547",
           "release": "4ae0493b",
           "version": "fd431d51"
         },
         {
           "arch": "(none)",
           "epoch": "0",
-          "installdate": "1570575778",
+          "installdate": "1604984547",
           "release": "45700c69",
           "version": "2fa658e0"
         }
@@ -5787,7 +5796,7 @@
   "platform_family": "rhel",
   "platform_version": "6.10",
   "root_group": "root",
-  "shard_seed": 83855715,
+  "shard_seed": 266357538,
   "shells": [
     "/bin/sh",
     "/bin/bash",
